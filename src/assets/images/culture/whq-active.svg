@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="V3.0-企业文化" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.榜单" transform="translate(-587.000000, -1226.000000)">
+            <g id="编组" transform="translate(587.000000, 1226.000000)">
+                <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="36" height="36"></rect>
+                <path d="M31.5,6 L4.5,6 C3.6715725,6 3,6.6715725 3,7.5 L3,28.5 C3,29.32845 3.6715725,30 4.5,30 L31.5,30 C32.32845,30 33,29.32845 33,28.5 L33,7.5 C33,6.6715725 32.32845,6 31.5,6 Z" id="路径" stroke="#007AFF" stroke-width="2.25"></path>
+                <line x1="18" y1="12.75" x2="18" y2="23.25" id="路径" stroke="#007AFF" stroke-width="2.25" stroke-linecap="square"></line>
+                <line x1="24" y1="18" x2="24" y2="23.25" id="路径" stroke="#007AFF" stroke-width="2.25" stroke-linecap="square"></line>
+                <line x1="12" y1="16.5" x2="12" y2="23.25" id="路径" stroke="#007AFF" stroke-width="2.25" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>
