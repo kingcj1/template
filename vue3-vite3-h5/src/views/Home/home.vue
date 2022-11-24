@@ -1,0 +1,75 @@
+<template lang="">
+    <div>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+        home<br/>
+    </div>
+</template>
+<script>
+import hooks from '@/hooks'
+export default {
+    setup(){
+        hooks.md({pageEvent: { trackPageView: '', setDocumentTitle: '' }})
+    }
+}
+</script>
+<style lang="">
+    
+</style>
