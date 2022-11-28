@@ -7,7 +7,7 @@ export function userInfo () {
     '/Base/GetUserInfo', {
       'params': {
         'Rourse': config.api.Rourse
-      },
+      }
       // 'unLoading': true
     });
 }

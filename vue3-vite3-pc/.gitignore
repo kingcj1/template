@@ -5,8 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-package-lock.json*
 lerna-debug.log*
+package-lock.json
+.eslintrc-auto-import.json
 
 node_modules
 dist

@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div>
         home<br/>
         home<br/>
@@ -63,13 +63,14 @@
     </div>
 </template>
 <script>
-import hooks from '@/hooks'
+import hooks from '@/hooks';
 export default {
-    setup(){
-        hooks.md({pageEvent: { trackPageView: '', setDocumentTitle: '' }})
-    }
-}
+  'name': 'home-page',
+  setup() {
+    hooks.md({ 'pageEvent': { 'trackPageView': '', 'setDocumentTitle': '' } });
+  }
+};
 </script>
-<style lang="">
+<style lang="less">
     
 </style>

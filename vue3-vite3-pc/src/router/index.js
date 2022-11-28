@@ -1,27 +1,24 @@
-import {
-    createRouter,
-    createWebHistory
-} from 'vue-router'
+import {createRouter, createWebHistory } from 'vue-router';
 import { useStore } from '@/store';
 const routes = [
-    {
-        'path': '/',
-        'redirect': '/home'
-    },
-    {
-        path: '/home',
-        name: 'Home',
-        component: () => import('@/views/Home/home.vue'),
-        meta: {
-            title: '首页'
-        }
+  {
+    'path': '/',
+    'redirect': '/home'
+  },
+  {
+    'path': '/home',
+    'name': 'Home',
+    'component': () => import('@/views/Home/home.vue'),
+    'meta': {
+      'title': '首页'
     }
-]
+  }
+];
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+  'history': createWebHistory(),
+  routes
+});
 
 /**
  * 全局前置守卫
@@ -30,18 +27,18 @@ const router = createRouter({
  */
 router.beforeEach((to, from, next) => {
     
-    if (Object.prototype.hasOwnProperty.call(to.meta, 'keepAlive')) {
-        let router = to.name;
-        useStore().system.updateRouterList(router)
-    }
-    document.title = to.meta.title;
-    next();
+  if (Object.prototype.hasOwnProperty.call(to.meta, 'keepAlive')) {
+    let router = to.name;
+    useStore().system.updateRouterList(router);
+  }
+  document.title = to.meta.title;
+  next();
 });
 
 
-export default router
+export default router;
 
 //注册给app
 export const useRouter = (app) => {
-    app.use(router);
-}
+  app.use(router);
+};

@@ -1,14 +1,14 @@
 import {
   defineStore
-} from 'pinia'
+} from 'pinia';
 
 export const useUserStore = defineStore('user', {
-  state: () => ({
+  'state': () => ({
     'dataAdUser': '',
     'adUser': '',
     'userInfo': {}
   }),
-  actions: {
+  'actions': {
     updateDataAdUser(data) {
       this.dataAdUser = data;
     },
@@ -19,8 +19,8 @@ export const useUserStore = defineStore('user', {
       this.userInfo = data;
     }
   },
-  persist: {
-    enabled: true,
-    storage: sessionStorage,
+  'persist': {
+    'enabled': true,
+    'storage': sessionStorage
   }
-})
+});

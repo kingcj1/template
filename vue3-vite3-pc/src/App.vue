@@ -17,7 +17,7 @@ import { userInfo } from '@/api/app.js';
 import { useStore } from '@/store';
 export default {
   setup() {
-    const store = useStore()
+    const store = useStore();
     const route = useRoute();
     const router = useRouter();
     const data = reactive({
@@ -41,7 +41,7 @@ export default {
       (to) => {
         if (Object.prototype.hasOwnProperty.call(to.meta, 'keepAlive') && to.meta.keepAlive) {
           let route = to.name;
-          store.system.updateRouterList(route)
+          store.system.updateRouterList(route);
         }
       },
       { 'immediate': true }
@@ -50,11 +50,11 @@ export default {
     const getUserInfo = () => {
       // 用户信息
       userInfo().then((result) => {
-        store.user.updateAdUser(result.name)
+        store.user.updateAdUser(result.LN);
         if (process.env.NODE_ENV == 'development') {
-          store.user.updateAdUser('san.zhang')
+          store.user.updateAdUser('qian.zhang');
         }
-        store.user.updateUserInfo(result)
+        store.user.updateUserInfo(result);
         if (result.errcode !== '0' && result.errcode !== 0) {
           router.replace('/401');
         }

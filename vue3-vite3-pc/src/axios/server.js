@@ -1,7 +1,7 @@
 import axios from 'axios';
 import config from '@/config';
 import { useStore } from '@/store';
-import router from '@/router'
+import router from '@/router';
 const instance = axios.create({
   // axios中请求配置有baseURL选项，表示请求URL公共部分
   'baseURL': config.api.baseURL,
