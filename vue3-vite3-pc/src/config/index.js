@@ -1,7 +1,7 @@
 const config = {
   'md': {
-    'url': 'onehr.innoventbio.com:9907',
-    'setSiteId': '1'
+    'url': '',
+    'setSiteId': ''
   },
   'api': {
     'baseURL': '/WebAPI/Api',

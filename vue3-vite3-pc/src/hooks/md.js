@@ -9,7 +9,7 @@ export const handleMotamo = (params) => {
     ...params
   };
   console.log(_matomo);
-  if (process.env.NODE_ENV === 'production') {
+  if (import.meta.env.MODE === 'production') {
     window.MATOMO(_matomo);
   }
 };
