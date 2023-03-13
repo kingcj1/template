@@ -1,0 +1,23 @@
+@import "~@/assets/css/base.less";
+
+.noPermission {
+  position: relative;
+  min-height: 100%;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    object-fit: contain;
+  }
+
+  span {
+    position: absolute;
+    left: 50%;
+    top: calc(40% + 100px);
+    transform: translate(-50%, -50%);
+    .fontStyleAndWeight(14px, #333333, 400)
+  }
+}

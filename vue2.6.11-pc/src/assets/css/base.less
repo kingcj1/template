@@ -1,0 +1,53 @@
+.boxSize (@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.fontStyle (@fontSize: 14px, @color: #333333, ) {
+  color: @color;
+  font-size: @fontSize;
+}
+
+.fontStyleAndWeight (@fontSize: 14px, @color: #333333, @fontWeight: 400) {
+  .fontStyle(@fontSize, @color);
+  font-weight: @fontWeight;
+}
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexCenter {
+  .flexAlignCenter();
+  justify-content: center;
+}
+
+.flexCenterBetween {
+  .flexAlignCenter();
+  justify-content: space-between;
+}
+
+.boxShadow {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.11);
+  box-sizing: border-box;
+}
+
+.vertical(@num: 2) {
+  overflow: hidden;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @num;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

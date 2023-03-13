@@ -13,14 +13,14 @@
 ##  项目部署依赖
 
 ##  项目配置
-    vite.config.js  配置文件
+    vue.config.js  配置文件
 
 ## 启动：
     1. npm i | npm install | ...
     2. npm run serve
 ## 打包：
-   准生产   npm run build:beta
-   生产     npm run build
+   准生产   npm run build:test
+   生产     npm run build:prod
 
 ## 重启：
 
