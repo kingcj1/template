@@ -20,7 +20,7 @@
                     <span v-if="item.numble != '-'" class="unit">{{ item.unit }}</span>
                     <van-tag v-if="getData(item, 'tag')" type="primary" class="tag">
                       <van-icon :name="getData(item, 'icon')" :color="getData(item, 'color')" class-prefix="iconfont"
-                                size="10px" class="icons" />
+                        size="10px" class="icons" />
                       <span :style="{ color: getData(item, 'color') }" v-if="item.hbRatio" class="font">{{ item.hbRatio
                       }}%</span>
                     </van-tag>
@@ -50,7 +50,7 @@ export default {
     chart
   },
   'mixins': [horizontal],
-  data () {
+  data() {
     return {
       'tabData': [
         { 'lable': '市场份额', 'name': '1' },
@@ -73,15 +73,15 @@ export default {
       'option': {}
     };
   },
-  created () {
+  created() {
     this.init();
   },
   'methods': {
-    init () {
+    init() {
       let _title = this.tabData[0];
       this.handleClickItem(_title);
     },
-    handleClickItem (item, idx) {
+    handleClickItem(item, idx) {
       let _router = this.$route.query;
       this.info.username = `${_router.name}`;
       this.info.userType = `${_router.type}`;
@@ -90,7 +90,7 @@ export default {
       this.getAllCompeteRatioByMonth();
     },
     //NP-Lilly事业部NP日均增长对比
-    getAllCompeteRatioByMonth () {
+    getAllCompeteRatioByMonth() {
       /* let o = {
         '1': '达伯舒',
         '2': '达伯舒',
@@ -217,7 +217,7 @@ export default {
       this.drawLineChart();
     },
     //绘制NP 日均增长对比
-    drawLineChart () {
+    drawLineChart() {
       let monthText = {
         '01': 'Jan',
         '02': 'Feb',
@@ -407,7 +407,7 @@ export default {
       this.lineArr3 = lineArr3;
       this.changeLineChart(obj);
     },
-    getData (val, type) {
+    getData(val, type) {
       if (type == 'tag') {
         return val.hbRatio && val.hbRatio != '-';
       } else if (type == 'icon') {
@@ -418,7 +418,7 @@ export default {
           : 'rgba(255, 73, 0, 1)';
       }
     },
-    changeLineChart (item) {
+    changeLineChart(item) {
       const line2 = this.lineArr2[item.idx] || '';
       const line3 = this.lineArr3[item.idx] || '';
       const lable = this.valueData[item.idx] || '';
@@ -453,5 +453,4 @@ export default {
 };
 </script>
 
-<style lang="less" scoped src='./index.less'>
-</style>
+<style lang="less" scoped src='./index.less'></style>

@@ -52,7 +52,7 @@ export default {
       userInfo().then((result) => {
         store.user.updateAdUser(result.LN);
         if (process.env.NODE_ENV == 'development') {
-          store.user.updateAdUser('qian.zhang');
+          store.user.updateAdUser('san.zhang');
         }
         store.user.updateUserInfo(result);
         if (result.errcode !== '0' && result.errcode !== 0) {

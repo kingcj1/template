@@ -2,24 +2,7 @@ import store from '@/store';
 export const MD = (name) => {
   console.log(`埋点: ${name} ${store.state.userInfo.adUser}`);
   if (process.env.NODE_ENV === 'production') {
-    let _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['setUserId', store.state.userInfo.adUser]);
-    _paq.push(['setDocumentTitle', name]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-      let u = '//matomo.innoventbio.com/';
-      _paq.push(['setTrackerUrl', u + 'matomo.php']);
-      _paq.push(['setSiteId', '20']);
-      let d = document,
-        g = d.createElement('script'),
-        s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript';
-      g.async = true;
-      g.src = u + 'matomo.js';
-      s.parentNode.insertBefore(g, s);
-    })();
+
   }
 };
 

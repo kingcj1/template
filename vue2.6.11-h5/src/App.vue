@@ -81,7 +81,7 @@ export default {
     },
     // 开发环境 
     getLoginAdUser () {
-      this.$store.commit('setAdUser', 'shanshan.zhai');
+      this.$store.commit('setAdUser', 'san.zhang');
       loginAdUser().then((res) => {
         let userInfo = res.data.login_user_info;
         this.$store.commit('setUserInfo', userInfo);
